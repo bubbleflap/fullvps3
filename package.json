@@ -1,0 +1,52 @@
+{
+  "name": "basewump",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"node server.js\" \"vite --host 0.0.0.0 --port 5000\"",
+    "dev:server": "node server.js",
+    "dev:client": "vite --host 0.0.0.0 --port 5000",
+    "build": "bash build.sh",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^22.0.1",
+    "connect-pg-simple": "^10.0.0",
+    "dotenv": "^17.3.1",
+    "drizzle-orm": "^0.39.3",
+    "drizzle-zod": "^0.7.1",
+    "ethers": "^6.16.0",
+    "express": "^4.22.1",
+    "express-session": "^1.19.0",
+    "memorystore": "^1.6.7",
+    "mysql2": "^3.18.2",
+    "nanoid": "^5.1.6",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.18.0",
+    "qrcode": "^1.5.4",
+    "telegraf": "^4.16.3",
+    "ws": "^8.19.0",
+    "zod": "^3.25.76",
+    "zod-validation-error": "^3.5.4"
+  },
+  "devDependencies": {
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@tailwindcss/vite": "^4.2.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "concurrently": "^9.2.1",
+    "framer-motion": "^11.18.2",
+    "lucide-react": "^0.460.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^4.2.0",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
